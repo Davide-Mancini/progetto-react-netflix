@@ -6,6 +6,7 @@ import MyGallery from "./components/MyGallery";
 import MyFooter from "./components/MyFooter";
 import MyCarousel from "./components/MyCarousel";
 import MyHero from "./components/MyHero";
+import MySetting from "./components/MySetting";
 function App() {
   return (
     <>
@@ -21,6 +22,7 @@ function App() {
         <MyGallery nomefilm="Batman" />
         <MyGallery nomefilm="Spiderman" />
       </main>
+      {/* <MySetting /> */}
       <footer>
         <MyFooter />
       </footer>
