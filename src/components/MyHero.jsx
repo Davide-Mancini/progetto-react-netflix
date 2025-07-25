@@ -3,8 +3,8 @@ import { Button, Col, Container, Row } from "react-bootstrap";
 const MyHero = (props) => {
   return (
     <>
-      <Container>
-        <Row className="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <Container className="bg-danger-subtle rounded-5 p-5 mb-5">
+        <Row className="row flex-lg-row-reverse align-items-center g-5 py-5  ">
           <Col className="col-10 col-sm-8 col-lg-6">
             <img
               src={props.foto[0]}

@@ -1,23 +1,32 @@
 import Carousel from "react-bootstrap/Carousel";
 
-const MyCarousel = () => {
+const MyCarousel = (props) => {
   return (
     <>
       <Carousel>
         <Carousel.Item>
-          <img src="../assets/foto1.png" alt="" className="d-block w-100" />
-          <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </Carousel.Caption>
+          <h1 className="text-center">TITOLI DA NON PERDERE!</h1>
+          <div className="d-flex justify-content-center">
+            <img src={props.fotocar[7]} alt="" className="me-1" />
+            <img src={props.fotocar[1]} alt="" className="me-1" />
+            <img src={props.fotocar[2]} alt="" className="me-1" />
+          </div>
         </Carousel.Item>
         <Carousel.Item>
-          <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </Carousel.Caption>
+          <h1 className="text-center">DISPONIBILI ANCORA PER POCO</h1>
+          <div className="d-flex justify-content-center">
+            <img src={props.fotocar[3]} alt="" className="me-1" />
+            <img src={props.fotocar[4]} alt="" className="me-1" />
+            <img src={props.fotocar[5]} alt="" className="me-1" />
+          </div>
         </Carousel.Item>
         <Carousel.Item>
+          <h1 className="text-center">NUOVE USCITE!</h1>
+          <div className="d-flex justify-content-center">
+            <img src={props.fotocar[6]} alt="" className="me-1" />
+            <img src={props.fotocar[9]} alt="" className="me-1" />
+            <img src={props.fotocar[5]} alt="" className="me-1" />
+          </div>
           <Carousel.Caption>
             <h3>Third slide label</h3>
             <p>

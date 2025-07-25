@@ -54,6 +54,11 @@ class MyGallery extends Component {
     console.log("RENDER FATTO");
     return (
       <>
+        {/* <MyCarousel
+          fotocar={this.state.film.map((film) => {
+            return film.Poster;
+          })}
+        /> */}
         <MyHero
           titolo={this.state.film.map((film) => {
             return film.Title;
