@@ -1,4 +1,5 @@
-import { Container, Navbar, Nav, NavDropdown } from "react-bootstrap";
+import { Container, Navbar, Nav, NavDropdown, Dropdown } from "react-bootstrap";
+import { Search, Bell } from "react-bootstrap-icons";
 
 const MyNavbar = () => {
   return (
@@ -35,6 +36,25 @@ const MyNavbar = () => {
               </NavDropdown>
             </Nav>
           </Navbar.Collapse>
+
+          <Search className="mx-2" />
+          <Bell className="mx-2" />
+          <p className="m-0 me-2">Bambini</p>
+          <Dropdown>
+            <Dropdown.Toggle variant="trasparetn" id="dropdown-basic">
+              <img
+                src="../public/avatar.png"
+                alt=""
+                style={{ width: "30px" }}
+              />
+            </Dropdown.Toggle>
+
+            <Dropdown.Menu>
+              <Dropdown.Item href="#/action-1">Profile</Dropdown.Item>
+              <Dropdown.Item href="#/action-2">Abbonamento</Dropdown.Item>
+              <Dropdown.Item href="#/action-3">Settings</Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
         </Container>
       </Navbar>
     </>

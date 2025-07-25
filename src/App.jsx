@@ -15,10 +15,11 @@ function App() {
       <SottoNav />
 
       <main>
-        <MyGallery nomefilm="Star Wars" />
-        <MyGallery nomefilm="Spiderman" />
-        <MyGallery nomefilm="Batman" />
         <MyGallery nomefilm="Harry Potter" />
+        <MyGallery nomefilm="Star Wars" />
+        {/* monto i components 4 volte sul component app e passo la prop sia per l'endpoint sia per il titolo */}
+        <MyGallery nomefilm="Batman" />
+        <MyGallery nomefilm="Spiderman" />
       </main>
       <footer>
         <MyFooter />

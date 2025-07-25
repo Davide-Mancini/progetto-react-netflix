@@ -3,7 +3,7 @@ import { Button, Col, Container, Row } from "react-bootstrap";
 const MyHero = (props) => {
   return (
     <>
-      <Container className="bg-danger-subtle rounded-5 p-5 mb-5">
+      <Container className="hero bg-danger-subtle rounded-5 p-5 mb-5">
         <Row className="row flex-lg-row-reverse align-items-center g-5 py-5  ">
           <Col className="col-10 col-sm-8 col-lg-6">
             <img
@@ -21,7 +21,7 @@ const MyHero = (props) => {
                 type="button"
                 className="btn btn-danger btn-lg px-4 me-md-2"
               >
-                Vedi ora!
+                Guarda ora!
               </Button>
             </div>
           </Col>

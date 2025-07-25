@@ -70,6 +70,7 @@ class MyGallery extends Component {
         <Container>
           <Row>
             {" "}
+            {/* aggiungo spinner  */}
             {this.state.caricamento && (
               <div className="text-center">
                 <Spinner animation="border" role="status">
@@ -77,6 +78,7 @@ class MyGallery extends Component {
                 </Spinner>
               </div>
             )}
+            {/* aggiungo errore di caricamento */}
             {this.state.errore && (
               <Alert variant="danger">
                 <Alert.Heading>
@@ -114,7 +116,7 @@ class MyGallery extends Component {
                       <Card.Title>{film.Title}</Card.Title>
                       <Card.Text className="grow-1">{film.Year}</Card.Text>
                       <Button variant="danger" className="w-100">
-                        PLAY
+                        GUARDA ORA!
                       </Button>
                     </Card.Body>
                   </Card>
