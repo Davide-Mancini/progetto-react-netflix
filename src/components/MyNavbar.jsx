@@ -1,8 +1,9 @@
 import { Container, Navbar, Nav, NavDropdown, Dropdown } from "react-bootstrap";
 import { Search, Bell } from "react-bootstrap-icons";
-import { Link, Links } from "react-router-dom";
+import { Link, Links, useNavigate } from "react-router-dom";
 
 const MyNavbar = () => {
+  const navigate = useNavigate();
   return (
     <>
       <Navbar expand="lg" className="bg-dark w-100 mb-3 " data-bs-theme="dark">
@@ -12,12 +13,21 @@ const MyNavbar = () => {
               src="../public/netflix_logo.png"
               alt=""
               style={{ width: "150px" }}
+              onClick={() => {
+                navigate("/");
+              }}
             />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#home" active>
+              <Nav.Link
+                href="#home"
+                active
+                onClick={() => {
+                  navigate("/");
+                }}
+              >
                 Home
               </Nav.Link>
               <Link to={"/tvshows"} className="nav-link">

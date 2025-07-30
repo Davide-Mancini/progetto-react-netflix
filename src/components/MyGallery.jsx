@@ -66,6 +66,9 @@ const MyGallery = (props) => {
         foto={film.map((film) => {
           return film.Poster;
         })}
+        imdbID={film.map((film) => {
+          return film.imdbID;
+        })}
       />
       <Container>
         <Row>

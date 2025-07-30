@@ -1,6 +1,9 @@
 import { Button, Col, Container, Row } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 
 const MyHero = (props) => {
+  console.log(props);
+  const navigate = useNavigate();
   return (
     <>
       <Container className="hero bg-danger-subtle rounded-5 p-5 mb-5">
@@ -20,6 +23,9 @@ const MyHero = (props) => {
               <Button
                 type="button"
                 className="btn btn-danger btn-lg px-4 me-md-2"
+                onClick={() => {
+                  navigate("/movie-details/" + props.imdbID[0]);
+                }}
               >
                 Guarda ora!
               </Button>
