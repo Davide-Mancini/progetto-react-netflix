@@ -1,5 +1,6 @@
 import { Container, Navbar, Nav, NavDropdown, Dropdown } from "react-bootstrap";
 import { Search, Bell } from "react-bootstrap-icons";
+import { Link, Links } from "react-router-dom";
 
 const MyNavbar = () => {
   return (
@@ -19,7 +20,10 @@ const MyNavbar = () => {
               <Nav.Link href="#home" active>
                 Home
               </Nav.Link>
-              <Nav.Link href="#link">TV Shows</Nav.Link>
+              <Link to={"/tvshows"} className="nav-link">
+                Tv Shows
+              </Link>
+
               <Nav.Link href="#link">Rcently Added</Nav.Link>
               <NavDropdown title="My List" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">
